@@ -1,46 +1,58 @@
-# Metronic 7 + Laravel 7
+## :rocket: Si-sewa
 
-### Introduction
+[![GitHub issues](https://img.shields.io/github/issues/hiskiapp/sisewa)](https://github.com/hiskiapp/sisewa/issues)
+[![GitHub forks](https://img.shields.io/github/forks/hiskiapp/sisewa)](https://github.com/hiskiapp/sisewa/network)
+[![GitHub stars](https://img.shields.io/github/stars/hiskiapp/sisewa)](https://github.com/hiskiapp/sisewa/stargazers)
+[![GitHub license](https://img.shields.io/github/license/hiskiapp/sisewa)](https://github.com/hiskiapp/sisewa)
 
-...
+## WHAT IS SI-SEWA?
 
-### Installation
+Gw ga tau
 
-Laravel has a set of requirements in order to ron smoothly in specific environment. Please see [requirements](https://laravel.com/docs/7.x#server-requirements) section in Laravel documentation.
+## System Requirement
 
-Metronic similarly uses additional plugins and frameworks, so ensure You have [Composer](https://getcomposer.org/) and [Node](https://nodejs.org/) installed on Your machine.
+-   PHP Version 7.4 or Above
+-   Composer
+-   Git
+-   NPM
 
-Assuming your machine meets all requirements - let's process to installation of Metronic Laravel integration (skeleton).
+## Installation
 
-1. Open in cmd or terminal app and navigate to this folder
-2. Run following commands
+1. Open the terminal, navigate to your directory (htdocs or public_html).
 
 ```bash
+git clone https://github.com/hiskiapp/sisewa.git
+cd sisewa
 composer install
 ```
 
-```bash
-cp .env.example .env
+2. Run NPM
+
+```
+npm install && npm run dev
 ```
 
-```bash
-php artisan key:generate
+
+3. Setting the database configuration, open .env file at project root directory
+
+```
+DB_DATABASE=**your_db_name**
+DB_USERNAME=**your_db_user**
+DB_PASSWORD=**password**
 ```
 
-```bash
-npm install
-```
+4. Install Project
 
 ```bash
-npm run dev
+php artisan install
 ```
+
+You will get the administrator credential and url access like example bellow:
 
 ```bash
-php artisan serve
+::Administrator Credential::
+URL Login: http://localhost:8000/admin/login
+Email: admin@admin.com
+Password: 123456
+
 ```
-
-And navigate to generated server link (http://127.0.0.1:8000)
-
-### Copyright
-
-...
